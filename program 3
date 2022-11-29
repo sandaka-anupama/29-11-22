@@ -1,0 +1,21 @@
+#PROGRAM TO PRINT WHETHER STUDENT IS PASS OR FAIL
+sno=int(input('Enter sno:'))
+name=input('Enter student name:')
+group=input('Enter group:')
+s1=int(input())
+s2=int(input())
+s3=int(input())
+if s1>=35 and s2>=35 and s3>=35:
+      print('Pass')
+else:
+     print('Fail')
+
+output:
+=== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/p7.py ==
+Enter sno:41
+Enter student name:Latha
+Enter group:MPC
+45
+67
+98
+Pass
