@@ -1,0 +1,30 @@
+#TO GENERATE EMPLOYEE TAX
+empo=int(input('Enter employee number:'))
+empname=input('Enter employee name:')
+basicsalary=int(input('Enter basic salary:'))
+da=int(input('Enter daily allowance:'))
+ta=int(input('Enter travelling allowance:'))
+hra=int(input('House rent allowance:'))
+netsalary=basicsalary+da+ta+hra
+if netsalary>100000:
+    tax=(netsalary*10)/100
+if netsalary<100000 and netsalary>50000:
+    tax=(netsalary*7)/100
+if netsalary<50000 and netsalary>40000:
+    tax=(netsalary*4)/100
+if  netsalary<40000 and netsalary>20000:
+    tax=(netsalary*2)/100
+if netsalary<20000:
+    tax=0
+print('Tax:',tax)
+        
+
+output:
+===================================================== RESTART: C:/Users/S ANUPAMA/AppData/Local/Programs/Python/Python311/salary.py ====================================================
+Enter employee number:1
+Enter employee name:latha
+Enter basic salary:25000
+Enter daily allowance:5000
+Enter travelling allowance:4000
+House rent allowance:5000
+Tax: 780.0
